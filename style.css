@@ -1,0 +1,121 @@
+:root{
+    --light-blue: #7CE2E2;
+    --medium-blue: #329999;
+    --dark-blue: #36447A;
+    --yellow: #FEFE19;
+    --gray: #707070;
+}
+
+
+html{
+    font-family: 'Baloo 2', cursive;
+    color: white;
+}
+
+h1{
+    font-family: 'Baloo 2', cursive;
+    font-size: 28px;
+    color: var(--medium-blue);
+    text-align: center;
+}
+
+.container{
+    /* background-color: var(--light-blue); */
+    width: 360px;
+    margin: auto auto;
+    height: 640px;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+
+.weather-container{
+    background-color: var(--light-blue);
+    width: 258px;
+    height: 459px;
+    border-radius: 5px;
+    margin: 1em auto 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.171);
+}
+
+.weather-description{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.weather-icon{
+    font-size: 54px;
+    color: var(--yellow);
+    display: block;
+    margin-bottom: 5px;
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.171)  ;
+}
+
+.weather-text{
+    font-size: 16px;
+}
+
+.location-temp{
+    margin-top: 50px;
+}
+
+.location-temp *{
+    display: block;
+    text-align: center;
+}
+
+
+.location-temp .city{
+    font-size: 36px;
+}
+
+.location-temp .state{
+    font-size: 16px;
+}
+
+.location-temp .temperature{
+    font-size: 72px;
+    font-weight: bold;
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.171)  ;
+}
+
+.more-information{
+    width: 100%;
+    font-size: 12px;
+    border-collapse: separate;
+    border-spacing: 5px;
+    margin-top: 50px;
+}
+
+.more-information tr{
+    border: 2px solid white;
+}
+
+.more-information th{
+    font-weight: 600;
+    text-align: initial;
+}
+
+.more-information td{
+    text-align: right;
+}
+
+.select-container{
+    margin: 1em auto 0 auto;
+    width: 258px;
+}
+
+.select-container label{
+    font-size: 16px;
+    color: var(--medium-blue);
+    display: block;
+}
+
+.select-container select{
+    width: 12em;
+    border: 1px solid var(--gray);
+    color: var(--gray);
+    border-radius: 5px;
+}
