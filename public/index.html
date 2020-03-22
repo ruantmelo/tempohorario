@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e2e3f704d3.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script type="module" src="../src/index.js"></script>
+
+    <title>Tempo Horário</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>tempo <i class="fas fa-temperature-low"></i> horário</h1>
+
+        <div class="weather-container day">
+            <div class="weather-description">
+                <i class="fas fa-sun weather-icon"></i>
+                <span class="weather-text">Ensolarado</span>
+            </div>
+
+            <div class="location-temp">
+                <span class='city'>Maceió</span>
+                <span class='state'>Alagoas</span>
+                <span class='temperature'>32º</span>
+            </div>
+            <table class='more-information'>
+                <tr>
+                    <th>Data e Hora Local:</th>
+                    <td> 20/03/2020 17:30h</td>
+                </tr>
+                <tr>
+                    <th>Umidade:</th>
+                    <td>30%</td>
+                </tr>
+                <tr>
+                    <th>Vento:</th>
+                    <td>800 nós</td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Atualizado às 22/03/2020 18h </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="select-container">
+            <label for="city">Selecione sua cidade:</label>
+            <select name="" id="city">
+                <option value="SBAR">Aracaju, SE</option>
+                <option value="SBBE">Belém, PA</option>
+                <option value="SBBH">Belo Horizonte, MG</option>
+                <option value="SBBV">Boa Vista, RR</option>
+                <option value="SBBR">Brasília, DF</option>
+                <option value="SBCG">Campo Grande, MS</option>
+                <option value="SBCY">Cuiabá, MT</option>
+                <option value="SBCT">Curitiba, PR</option>
+                <option value="SBFL">Florianópolis, SC</option>
+                <option value="SBFZ">Fortaleza, CE</option>
+                <option value="SBGO">Goiânia, GO</option>
+                <option value="SBJP">João Pessoa, PB</option>
+                <option value="SBMQ">Macapá. AP</option>
+                <option value="SBMO">Maceió, AL</option>
+                <option value="SBMN">Manaus, AM</option>
+                <option value="SBNT">Natal, RN</option>
+                <option value="SBPJ">Palmas, TO</option>
+                <option value="SBPA">Porto Alegre, RS</option>
+                <option value="SBPV">Porto Velho, RO</option>
+                <option value="SBRF">Recife, PE</option>
+                <option value="SBRB">Rio Branco, AC</option>
+                <option value="SBGL">Rio de Janeiro, RJ</option>
+                <option value="SBSV">Salvador, BA</option>
+                <option value="SBSL">São Luís, MA</option>
+                <option value="SBSP">São Paulo, SP</option>
+                <option value="SBTE">Teresina, PI</option>
+                <option value="SBVT">Vitória, ES</option>
+            </select>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

@@ -86,7 +86,7 @@ h1{
     font-size: 12px;
     border-collapse: separate;
     border-spacing: 5px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .more-information tr{
@@ -100,6 +100,11 @@ h1{
 
 .more-information td{
     text-align: right;
+}
+
+.more-information tfoot tr td{
+    text-align: center;
+    padding-top: 10px;
 }
 
 .select-container{

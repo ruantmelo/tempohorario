@@ -1,0 +1,30 @@
+const Siglas = {
+    ec: "Encoberto com Chuvas Isoladas",
+    ci: "Chuvas Isoladas",
+    c: "Chuva",
+    in: "Instávle",
+    pp: "Poss. de Pancadas de Chuva",
+    cm: "Chuva pela Manhã",
+    cn: "Chuva a Noite",
+    pt: "Pancadas de Chuva a Tarde",
+    pm: "Pancadasde de Chuva pela Manhã",
+    np: "Nublado e Pancadas de Chuva",
+    pc: "Pancadas de Chuva",
+    pn: "Parcialmente Nublado",
+    cv: "Chuvisco",
+    ch: "Chuvoso",
+    t: "Tempestade",
+    ps: "Predomínio de Sol",
+    e: "Encoberto",
+    n: "Nublado",
+    cl: "Céu Claro",
+    nv: "Nevoeiro",
+    g: "Geada",
+    ne: "Neve",
+    nd: "Não Definido",
+    pnt: "Pancadas de Chuva a Noite",
+    psc: "Possibilidade de Chuva",
+}
+
+
+export default Siglas;
