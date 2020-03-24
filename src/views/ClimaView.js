@@ -1,9 +1,23 @@
+import Icons from '../Icons.js'
+
 export class ClimaView {
-    constructor() {
-        this._template = `<div class="weather-container day">
+    constructor(elemento) {
+        this._elemento = elemento
+    }
+
+    template(clima) {
+
+        let { cidade, estado, tempo, tempo_desc, temperatura, umidade, vento_int, atualizacao, periodo } = clima
+
+        if (periodo === '--') {
+            console.log('kkk')
+            periodo = 'manha'
+        }
+        console.log('Periodo', periodo)
+        return `
         <div class="weather-description">
-            <i class="fas fa-sun weather-icon"></i>
-            <span class="weather-text">Ensolarado</span>
+            <i class="fas fa-${Icons[periodo][tempo]} weather-icon"></i>
+            <span class="weather-text">${tempo_desc}</span>
         </div>
 
         <div class="location-temp">
@@ -13,27 +27,27 @@ export class ClimaView {
         </div>
         <table class='more-information'>
             <tr>
-                <th>Data e Hora Local:</th>
-                <td> 20/03/2020 17:30h</td>
-            </tr>
-            <tr>
                 <th>Umidade:</th>
-                <td>${umidade}</td>
+                <td>${umidade}%</td>
             </tr>
             <tr>
                 <th>Vento:</th>
-                <td>${vento}}</td>
+                <td>${vento_int} km/h</td>
             </tr>
             <tfoot>
                 <tr>
-                    <td colspan="2">Atualizado às ${timeatualizacao} </td>
+                    <td colspan="2">Atualizado às ${atualizacao} </td>
                 </tr>
             </tfoot>
         </table>
-    </div>`
-    }
-
+   `}
+    //    <th>Data e Hora Local:</th>
+    //    <td> 20/03/2020 17:30h</td>
     update(clima) {
+        this._elemento.innerHTML = this.template(clima);
+        if (clima.periodo == '--' || clima.tempo == '--') return ''
 
+        // this._elemento.classList = ['weather-container', `${clima.periodo}`]
+        this._elemento.className = `weather-container ${clima.periodo}`
     }
 }

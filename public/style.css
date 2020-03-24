@@ -4,6 +4,7 @@
     --dark-blue: #36447A;
     --yellow: #FEFE19;
     --gray: #707070;
+    --orange: #F8C027;
 }
 
 
@@ -47,7 +48,6 @@ h1{
 
 .weather-icon{
     font-size: 54px;
-    color: var(--yellow);
     display: block;
     margin-bottom: 5px;
     text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.171)  ;
@@ -123,4 +123,25 @@ h1{
     border: 1px solid var(--gray);
     color: var(--gray);
     border-radius: 5px;
+}
+
+
+.manha{
+    background-color: var(--light-blue);
+}
+
+.tarde{
+    background-color: var(--orange);
+}
+
+.noite{
+    background-color: var(--dark-blue);
+}
+
+i[class*='moon']{
+    color: white;
+}
+
+.noite i[class*='sun']{
+    color: var(--yellow);
 }

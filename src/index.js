@@ -1,7 +1,7 @@
-import { CapitaisService } from './services/CapitaisService.js'
+import { ClimaController } from '../src/controllers/ClimaController.js';
 
+const climaController = new ClimaController()
 
-const capitaisService = new CapitaisService();
-console.log(capitaisService.get('SBMO').then((capitais) => console.log(capitais)))
-
-document.querySelector('select').onchange = ((e) => console.log(e.target.value))
+document.querySelector('select').onchange = (e) => {
+    climaController.change(e)
+}
