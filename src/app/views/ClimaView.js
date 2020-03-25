@@ -10,7 +10,6 @@ export class ClimaView {
         let { cidade, estado, tempo, tempo_desc, temperatura, umidade, vento_int, atualizacao, periodo } = clima
 
         if (periodo === '--') {
-            console.log('kkk')
             periodo = 'manha'
         }
         console.log('Periodo', periodo)

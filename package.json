@@ -1,0 +1,16 @@
+{
+  "name": "tempohorario",
+  "version": "1.0.0",
+  "main": "./src/app/index.js",
+  "repository": "https://github.com/ruan-melo/tempohorario.git",
+  "author": "Ruan Melo <ruantmelo@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0"
+  },
+  "scripts": {
+    "dev": "babel src -d dist -w --source-maps"
+  }
+}

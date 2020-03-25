@@ -1,15 +1,13 @@
-// http://servicos.cptec.inpe.br/XML/capitais/condicoesAtuais.xml
-
 import { XmlToJson } from "../utils/XmlToJson.es6.js";
-import { Clima } from "../models/Clima.js";
-import Codigos from '../Codigos.js'
+import { Clima } from "../app/controllers/models/Clima.js";
+import Codigos from '../../Codigos.js'
 
 
 export class ClimaService {
 
     constructor() {
         this._json = new XmlToJson()
-        // this._url = 'https://api.hgbrasil.com/weather'
+        this._url = 'http://servicos.cptec.inpe.br/XML/capitais/condicoesAtuais.xml'
     }
 
     index() {
@@ -18,7 +16,7 @@ export class ClimaService {
 
             let xhr = new XMLHttpRequest()
 
-            xhr.open('GET', 'http://servicos.cptec.inpe.br/XML/capitais/condicoesAtuais.xml')
+            xhr.open('GET', this._url)
 
             xhr.onreadystatechange = () => {
                 if (xhr.readyState === 4) {
@@ -43,7 +41,7 @@ export class ClimaService {
         return new Promise((resolve, reject) => {
             let xhr = new XMLHttpRequest()
 
-            xhr.open('GET', 'http://servicos.cptec.inpe.br/XML/capitais/condicoesAtuais.xml')
+            xhr.open('GET', this._url)
 
             xhr.onreadystatechange = () => {
                 if (xhr.readyState === 4) {
@@ -56,18 +54,14 @@ export class ClimaService {
                         const { temperatura, umidade, vento_int, atualizacao, tempo, tempo_desc } = clima
                         //cidade, estado, temperatura, horaLocal, umidade, vento, atualizacao, tempo_desc, periodo
                         const hora = new Date().getHours();
-                        console.log(hora)
                         let periodo;
                         if (hora >= 18 || hora < 5) {
                             periodo = 'noite'
-                            console.log('PEGUEI noite')
                         }
 
                         else if (hora < 18 && hora >= 13) {
-                            console.log('PEGUEI tarde')
                             periodo = 'tarde'
                         } else {
-                            console.log('PEGUEI manha')
                             periodo = 'manha'
                         }
 

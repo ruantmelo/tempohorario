@@ -1,8 +1,6 @@
 export class ProxyFactory {
 
     static create(objeto, props, acao) {
-        // console.log('Criando Proxy')
-        // console.log(arguments)
         return new Proxy(objeto, {
 
             get(target, prop, receiver) {
