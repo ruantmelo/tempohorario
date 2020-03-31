@@ -1,6 +1,6 @@
 import { XmlToJson } from "../utils/XmlToJson.es6.js";
-import { Clima } from "../app/controllers/models/Clima.js";
-import Codigos from '../../Codigos.js'
+import { Clima } from "../models/Clima.js";
+import Codigos from '../Codigos.js'
 
 
 export class ClimaService {

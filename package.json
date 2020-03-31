@@ -6,11 +6,16 @@
   "author": "Ruan Melo <ruantmelo@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.0"
+    "@babel/preset-env": "^7.9.0",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   },
   "scripts": {
-    "dev": "babel src -d dist -w --source-maps"
+    "dev": "webpack --config webpack.config.js ",
+    "build-dist": "cross-env NODE_ENV=production webpack --config webpack.config.js ",
+    "start": "webpack-dev-server"
   }
 }

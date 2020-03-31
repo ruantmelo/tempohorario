@@ -1,6 +1,6 @@
-import { ClimaView } from "../../views/ClimaView.js";
+import { ClimaView } from "../views/ClimaView.js";
 import { Bind } from "../utils/Bind.js";
-import { Clima } from "./models/Clima.js";
+import { Clima } from "../models/Clima.js";
 import { ClimaService } from "../services/ClimaService.js";
 
 export class ClimaController {
