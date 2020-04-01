@@ -8,10 +8,9 @@ export class ProxyFactory {
                 if (props.includes(prop) && ProxyFactory._ehFuncao(target[prop])) {
                     return function () {
 
-                        console.log(`interceptando ${prop}`);
-
                         let retorno = Reflect.apply(target[prop], target, arguments);
                         acao(target);
+                        console.log(retorno)
                         return retorno;
                     }
                 }

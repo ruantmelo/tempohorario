@@ -12,7 +12,6 @@ export class ClimaView {
         if (periodo === '--') {
             periodo = 'manha'
         }
-        console.log('Periodo', periodo)
         return `
         <div class="weather-description">
             <i class="fas fa-${Icons[periodo][tempo]} weather-icon"></i>
