@@ -1,7 +1,8 @@
-import { ClimaController } from '../src/controllers/ClimaController.js';
+import { TempoController } from './controllers/TempoController.js';
 import '../css/style.css';
-const climaController = new ClimaController()
+const tempoController = new TempoController()
 
 document.querySelector('select').onchange = (e) => {
-    climaController.change(e)
+    console.log(e)
+    tempoController.change(e)
 }

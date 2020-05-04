@@ -31,6 +31,7 @@ h1{
 
 
 .weather-container{
+    overflow: hidden;
     background-color: var(--light-blue);
     width: 258px;
     height: 459px;
@@ -43,14 +44,15 @@ h1{
 
 .weather-description{
     text-align: center;
-    margin-top: 80px;
+   
 }
 
 .weather-icon{
     font-size: 54px;
     display: block;
+    margin: auto auto;
     margin-bottom: 5px;
-    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.171)  ;
+    /* text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.171)  ; */
 }
 
 .weather-text{
@@ -68,7 +70,7 @@ h1{
 
 
 .location-temp .city{
-    font-size: 36px;
+    font-size: 24px;
 }
 
 .location-temp .state{
@@ -86,7 +88,7 @@ h1{
     font-size: 12px;
     border-collapse: separate;
     border-spacing: 5px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .more-information tr{
@@ -137,11 +139,11 @@ h1{
 .noite{
     background-color: var(--dark-blue);
 }
-
+/* 
 i[class*='moon']{
     color: white;
 }
 
 .noite i[class*='sun']{
     color: var(--yellow);
-}
+} */

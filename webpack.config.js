@@ -1,8 +1,18 @@
 const path = require('path');
 const HtmlWepackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const optimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const babiliPlugin = require('babili-webpack-plugin')
+const webpack = require('webpack')
 const mode = process.env.NODE_ENV
 const plugins = []
+
+
+let APP_ID = JSON.stringify(':D')
+
+plugins.push(new webpack.DefinePlugin({
+    APP_ID,
+}))
 
 
 plugins.push(new HtmlWepackPlugin({
@@ -21,7 +31,6 @@ plugins.push(new HtmlWepackPlugin({
 
 plugins.push(new MiniCssExtractPlugin())
 
-// let SERVICE_URL = JSON.stringify('http://localhost:3000');
 
 if (mode === 'production') {
     // let SERVICE_URL = JSON.stringify('http://minha-api');
@@ -47,6 +56,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js'
     },
+    devtool: 'inline-source-map',
     module: {
         rules: [
             {

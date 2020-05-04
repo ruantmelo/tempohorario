@@ -1,5 +1,5 @@
 {
     "presets": [
-        "@babel/preset-env" //Preset para transformar o código para versão mais antiga.
+        "@babel/preset-env"
     ]
 }

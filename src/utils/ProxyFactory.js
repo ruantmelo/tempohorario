@@ -10,7 +10,7 @@ export class ProxyFactory {
 
                         let retorno = Reflect.apply(target[prop], target, arguments);
                         acao(target);
-                        console.log(retorno)
+
                         return retorno;
                     }
                 }

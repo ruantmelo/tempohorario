@@ -1,110 +1,110 @@
 const Codigos = {
-    SBAR: {
+    "3471872": {
         cidade: 'Aracaju',
         estado: 'Recife'
     },
-    SBBE: {
+    "3405870": {
         cidade: 'Belém',
         estado: 'Pará'
     },
-    SBBH: {
+    "3470127": {
         cidade: 'Belo Horizonte',
         estado: 'Minas Gerais'
     },
-    SBBV: {
+    "3664980": {
         cidade: 'Boa Vista',
         estado: 'Roraima'
     },
-    SBBR: {
+    "3469058": {
         cidade: 'Brasília',
         estado: 'Distrito Federal'
     },
-    SBCG: {
+    "3467747": {
         cidade: 'Campo Grande',
         estado: 'Mato Grosso do Sul'
     },
-    SBCY: {
+    "3465038": {
         cidade: 'Cuiabá',
         estado: 'Mato Grosso'
     },
-    SBCT: {
+    "6322752": {
         cidade: 'Curitiba',
         estado: 'Paraná'
     },
-    SBFL: {
+    "6323121": {
         cidade: 'Florianópolis',
         estado: 'Santa Catarina'
     },
-    SBFZ: {
+    "6320062": {
         cidade: 'Fortaleza',
         estado: 'Ceará'
     },
-    SBGO: {
+    "3462377": {
         cidade: 'Goiânia',
         estado: 'Goiás'
     },
-    SBJP: {
+    "3397277": {
         cidade: 'João Pessoa',
         estado: 'Paraíba'
     },
-    SBMQ: {
+    "3396016": {
         cidade: 'Macapá',
         estado: 'Amapá'
     },
-    SBMO: {
+    "3395981": {
         cidade: 'Maceió',
         estado: 'Alagoas'
     },
 
-    SBMN: {
+    "3663517": {
         cidade: 'Manaus',
         estado: 'Amazonas'
     },
-    SBNT: {
+    "3394023": {
         cidade: 'Natal',
         estado: 'Rio Grande do Norte'
     },
-    SBPJ: {
+    "3474574": {
         cidade: 'Palmas',
         estado: 'Tocantis'
     },
-    SBPA: {
+    "3452925": {
         cidade: 'Porto Alegre',
         estado: 'Rio Grande do Sul'
     },
-    SBPV: {
+    "3662762": {
         cidade: 'Porto Velho',
         estado: 'Rondônia'
     },
-    SBRF: {
+    "3390760": {
         cidade: 'Recife',
         estado: 'Pernambuco'
     },
-    SBRB: {
+    "3662574": {
         cidade: 'Rio Branco',
         estado: 'Acre'
     },
-    SBGL: {
+    "3451190": {
         cidade: 'Rio de Janeiro',
         estado: 'Rio de Janeiro'
     },
-    SBSV: {
+    "3450554": {
         cidade: 'Salvador',
         estado: 'Bahia'
     },
-    SBSL: {
+    "3388368": {
         cidade: 'São Luís',
         estado: 'Maranhão'
     },
-    SBSP: {
+    "3448439": {
         cidade: 'São Paulo',
         estado: 'São Paulo'
     },
-    SBTE: {
+    "3386496": {
         cidade: 'Teresina',
         estado: 'Piauí'
     },
-    SBVT: {
+    "3444924": {
         cidade: 'Vitória',
         estado: 'Espírito Santo'
     },
